@@ -1,0 +1,31 @@
+" Setting a 'leader' allows for quick substitutions
+let mapleader = ","
+
+" Use the leader to replace longer commands like this
+nmap <leader>w :w!<cr>
+
+" Editing
+set number
+set relativenumber
+set ruler
+set smarttab
+set shiftwidth=4
+set tabstop=4
+syntax enable
+
+" for regex
+set magic
+set regexpengine=0
+
+" Suggestions menu
+set wildmenu
+
+" Enable enhanced settings
+set nocompatible
+
+" Stop annoying backups
+set noswapfile
+set nobackup
+
+" Always show the status line
+set laststatus=2

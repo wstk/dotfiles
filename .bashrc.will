@@ -1,0 +1,17 @@
+alias ls='ls --show-control-chars -F --color=auto $*'
+alias ll='ls -la --color=auto -l $*'
+
+# Git aliases
+alias gs='git status'
+alias gl='git log --oneline --decorate -n 15 $*'
+alias gla='git log --oneline --all --graph --decorate --max-count=40 -n 30 $*'
+alias gpl='git pull'
+alias gps='git push'
+alias gd='git diff $*'
+
+# Others
+alias me='cd ~'
+alias clc='clear'
+
+
+export PS1="\[\e[0;31m\]\[\e[0;32m\]\u@\h \[\e[0;33m\]\w\n\[\e[0;37m\]\$ \[\e[m\] "
