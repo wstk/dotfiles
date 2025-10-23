@@ -19,6 +19,7 @@ set regexpengine=0
 
 " Suggestions menu
 set wildmenu
+set wildmode=longest:full,full
 
 " Enable enhanced settings
 set nocompatible
@@ -29,3 +30,7 @@ set nobackup
 
 " Always show the status line
 set laststatus=2
+
+" Cursor
+let &t_SI = "\e[5 q"
+let &t_EI = "\e[2 q"
