@@ -15,12 +15,12 @@ need to pollute this common file.
 
 # .vimrc.will
 
-I don't think there is the option to configure the `.vimrc` path beyond the 'standard' locations.
+As with `.bashrc` we can simply source this from the primary `.vimrc` location (`~/.vimrc`, or `$MYVIMRC`)
 
-Therefore simply *copy* this file. If changes are made, they can be propagated back to the repo, if needed.
+If this is sourced at the top, then **machine specific** config can be added below and should (i think) overwrite.
 
 ```
-cp <path_to_repo>/.vimrc.will ~/.vimrc
+source <path_to_repo>/.vimrc.will ~/.vimrc
 ```
 
 # .gitconfig.will
