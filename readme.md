@@ -6,7 +6,7 @@ Version control common configuration files. They can be installed in different w
 
 If a `~/.bashrc` already exists simply 'source' this from the end of that file.
 
-```
+```bash
 source <path_to_repo>/.bashrc.will
 ```
 
@@ -19,11 +19,11 @@ As with `.bashrc` we can simply source this from the primary `.vimrc` location (
 
 If this is sourced at the top, then **machine specific** config can be added below and should overwrite.
 
-```
+```bash
 source <path_to_repo>/.vimrc.will ~/.vimrc
 ```
 
-# .gitconfig.will
+# gitsettings 
 
 Unlike the others, this is a set of **git commands** which, when run, will configure git globally.
 
@@ -32,13 +32,13 @@ as required.
 
 To set, simply run
 
-```
+```bash
 gitsettings
 ```
 
 On Windows, assuming we are using git bash or similar, would have to execute with bash explicitly
 
-```
+```shell
 bash gitsettings
 ```
 

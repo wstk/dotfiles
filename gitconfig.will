@@ -1,0 +1,42 @@
+# Display output in columns
+git config --global column.ui auto
+
+# Sort branch display by latest commit, rather then alphabetical
+git config --global branch.sort -committerdate
+
+# Sort tags more sensibly, properly considering version numbers etc..
+git config --global tag.sort version:refname
+
+# Auto-set the default branch name
+git config --global init.defaultBranch main
+
+# Generally considered a better diff'ing algorithm, and some generally useful diff options
+git config --global diff.algorithm histogram
+git config --global diff.colorMoved plain
+git config --global diff.mnemonicPrefix true
+git config --global diff.renames true
+
+# Avoid "missing upstream" error, by setting this automatically
+git config --global push.autoSetupRemote true
+
+# Recurse into submodules for pulls/fetches etc..
+git config --global submodule.recurse true
+
+# Check all changes in submodules have been pushed.
+git config --global push.recurseSubmodules check
+
+# Pruning,which keeps local as close to remote as possible
+git config --global fetch.prune true
+git config --global fetch.pruneTags true
+git config --global fetch.all true
+
+# Suggest on typos
+git config --global help.autocorrect prompt
+
+# Set path to a global gitignore for generally ignored stuff.
+git config --global core.excludesfile ~/.gitignore
+
+# See a useful explainer 
+# https://blog.gitbutler.com/how-git-core-devs-configure-git#reuse-recorded-resolutions
+git config --global rerere.enabled true
+git config --global rerere.autoupdate true
