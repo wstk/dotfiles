@@ -3,6 +3,7 @@ let mapleader = ","
 
 " Use the leader to replace longer commands like this
 nmap <leader>w :w!<cr>
+nmap <leader>n :NERDTree<cr>
 
 " Editing
 set number
@@ -34,3 +35,11 @@ set laststatus=2
 " Cursor
 let &t_SI = "\e[5 q"
 let &t_EI = "\e[2 q"
+
+" vim-plug Plugin manager. **Ensure it is installed (see readme.md)**
+call plug#begin()
+
+Plug 'vim-airline/vim-airline'
+Plug 'preservim/nerdtree'
+
+call plug#end()

@@ -23,6 +23,24 @@ If this is sourced at the top, then **machine specific** config can be added bel
 source <path_to_repo>/.vimrc.will ~/.vimrc
 ```
 
+## vim plugins
+
+Vim plugins can be managed using the `vim-plug` (itself a plugin). This can be installed manually, with instructions [here](https://github.com/junegunn/vim-plug)
+but basically just copy the contents of [this file](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) into `.vim/autoload`
+
+Plugins are added in the code block
+
+```bash
+plug#begin()
+
+# add plugins here
+
+plug#end()
+
+```
+
+and can then be directly installed in Vim with `:PlugInstall`. See [the github readme](https://github.com/junegunn/vim-plug) for all the instructions
+
 # gitsettings 
 
 Unlike the others, this is a set of **git commands** which, when run, will configure git globally.
