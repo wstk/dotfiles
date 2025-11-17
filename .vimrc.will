@@ -43,7 +43,11 @@ call plug#begin()
 
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
+Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
-
+" NERDTree, display hidden files
+let NERDTreeShowHidden=1

@@ -39,9 +39,9 @@ plug#end()
 
 ```
 
-and can then be directly installed in Vim with `:PlugInstall`. See [the github readme](https://github.com/junegunn/vim-plug) for all the instructions
+and can then be directly installed in Vim by running the command `:PlugInstall`. See [the github readme](https://github.com/junegunn/vim-plug) for all the instructions
 
-# gitsettings 
+# Git
 
 Unlike the others, this is a set of **git commands** which, when run, will configure git globally.
 
@@ -51,13 +51,13 @@ as required.
 To set, simply run
 
 ```bash
-./gitsettings
+./gitconfig.will
 ```
 
 On Windows, assuming we are using git bash or similar, would have to execute with bash explicitly
 
 ```shell
-bash gitsettings
+bash gitconfig.will
 ```
 
 One thing that is not included is username and email. When making a commit Git will prompt you to set these, if you have not. You can
