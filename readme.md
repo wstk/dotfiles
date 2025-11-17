@@ -10,7 +10,7 @@ If a `~/.bashrc` already exists simply 'source' this from the end of that file.
 source <path_to_repo>/.bashrc.will
 ```
 
-If one does not exist, it is probably easier to create one, so machine specific config does not
+If one does not exist create one, so machine specific config does not
 need to pollute this common file.
 
 # .vimrc.will
@@ -20,7 +20,7 @@ As with `.bashrc` we can simply source this from the primary `.vimrc` location (
 If this is sourced at the top, then **machine specific** config can be added below and should overwrite.
 
 ```bash
-source <path_to_repo>/.vimrc.will ~/.vimrc
+source <path_to_repo>/.vimrc.will 
 ```
 
 ## vim plugins
@@ -51,7 +51,7 @@ as required.
 To set, simply run
 
 ```bash
-gitsettings
+./gitsettings
 ```
 
 On Windows, assuming we are using git bash or similar, would have to execute with bash explicitly
