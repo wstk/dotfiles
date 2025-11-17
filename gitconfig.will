@@ -1,3 +1,8 @@
+# Note on autocrlf setting - this is NOT set here
+# On Windows this should be set as autocrlf=true
+# whereas on Linux we would want to set autocrlf=input
+# which will *generally* be the default, so just leave this alone!
+
 # Display output in columns
 git config --global column.ui auto
 
@@ -40,3 +45,8 @@ git config --global core.excludesfile ~/.gitignore
 # https://blog.gitbutler.com/how-git-core-devs-configure-git#reuse-recorded-resolutions
 git config --global rerere.enabled true
 git config --global rerere.autoupdate true
+
+# Some aliases
+
+git config --global alias.cane 'git commit --amend --no-edit'
+
